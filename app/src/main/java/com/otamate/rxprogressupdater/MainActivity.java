@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private Observable<Integer> observable;
     private Subscriber<Integer> subscriber;
     public final static int MAX_PROGRESS = 10;
-    private final static String PREF_NAME = "Prefs";
-    private final static String PREF_KEY_PROGRESS = "Progress";
+    private final static String PREF_NAME = "prefs";
+    private final static String PREF_KEY_PROGRESS = "progress";
     private TextView textView;
     private ProgressBar progressBar;
     private Button button;
