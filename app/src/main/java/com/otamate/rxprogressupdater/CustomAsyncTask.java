@@ -6,7 +6,6 @@ import android.util.Log;
 
 import java.lang.ref.WeakReference;
 
-
 public class CustomAsyncTask extends AsyncTask<Void, Integer, Void> {
     private static final String TAG = CustomAsyncTask.class.getSimpleName();
     private WeakReference<MainActivity> mActivity;

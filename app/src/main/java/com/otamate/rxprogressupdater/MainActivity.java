@@ -1,5 +1,8 @@
 package com.otamate.rxprogressupdater;
-
+/*
+    Show a progress indicator which continues after the device has been rotated
+    using several different approaches.
+ */
 import android.app.FragmentManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -227,8 +230,8 @@ public class MainActivity extends AppCompatActivity {
         mObservable = Observable.from(numbersList);
 
         mObservable.subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(mSubscriber);
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(mSubscriber);
     }
 
     private void handleTimedEmitterClick() {
@@ -277,7 +280,6 @@ public class MainActivity extends AppCompatActivity {
 
         mObservable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .take(MAX_PROGRESS)
             .subscribe(mSubject);
 
         mSubject.subscribe(mSubscriber);
