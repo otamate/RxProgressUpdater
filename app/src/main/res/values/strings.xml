@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">RxProgressUpdater</string>
+
+    <string name="async_task">Async Task</string>
+    <string name="intent_service">IntentService</string>
+    <string name="list">List</string>
+    <string name="timed_emitter">Timed Emitter</string>
+    <string name="cold_observable">Cold Observable</string>
+    <string name="custom_collection">Custom Collection</string>
+    <string name="custom_iterator">Custom Iterator</string>
+
+    <string-array name="updaterType">
+        <item>@string/async_task</item>
+        <item>@string/intent_service</item>
+        <item>@string/list</item>
+        <item>@string/timed_emitter</item>
+        <item>@string/cold_observable</item>
+        <item>@string/custom_collection</item>
+        <item>@string/custom_iterator</item>
+    </string-array>
+
 </resources>
